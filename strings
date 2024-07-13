@@ -149,3 +149,19 @@ int main() {
     }
     printf("%d",index-1);
     return 0;
+9.separate the character from the string
+#include <stdio.h>
+#include <string.h>
+int main() {
+    // Write C code here
+    char str[30];
+    fgets(str,sizeof(str),stdin);
+    puts(str);
+    int index=0;
+    while(str[index]!='\0')
+    {
+    printf("%c ",str[index]);
+    index++;
+    }
+    return 0;
+}
