@@ -76,3 +76,61 @@ int main() {
     printf("%d %d",vowels,cons-1);
     return 0;
 }
+5.uppercase
+#include <stdio.h>
+#include <string.h>
+int main() {
+    // Write C code here
+    char str[30];
+    fgets(str,sizeof(str),stdin);
+    puts(str);
+    int index=0;
+    while(str[index]!='\0')
+    {
+                if(str[index]>='a'&&str[index]<='z')
+                str[index]=str[index]-32;
+
+    index++;
+    }
+    printf("%s",str);
+    return 0;
+}
+6.lowercase
+#include <stdio.h>
+#include <string.h>
+int main() {
+    // Write C code here
+    char str[30];
+    fgets(str,sizeof(str),stdin);
+    puts(str);
+    int index=0;
+    while(str[index]!='\0')
+    {
+               
+             if(str[index]>='A'&&str[index]<='Z')
+                str[index]=str[index]+32;
+    index++;
+    }
+    printf("%s",str);
+    return 0;
+}
+7.toggle
+#include <stdio.h>
+#include <string.h>
+int main() {
+    // Write C code here
+    char str[30];
+    fgets(str,sizeof(str),stdin);
+    puts(str);
+    int index=0;
+    while(str[index]!='\0')
+    {
+                if(str[index]>='a'&&str[index]<='z')
+                str[index]=str[index]-32;
+                else if(str[index]>='A'&&str[index]<='Z')
+                str[index]=str[index]+32;
+    index++;
+    }
+    printf("%s",str);
+    return 0;
+}
