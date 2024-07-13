@@ -134,3 +134,18 @@ int main() {
     printf("%s",str);
     return 0;
 }
+8.count tthe total number of words
+#include <stdio.h>
+#include <string.h>
+int main() {
+    // Write C code here
+    char str[30];
+    fgets(str,sizeof(str),stdin);
+    puts(str);
+    int index=0;
+    while(str[index]!='\0')
+    {
+    index++;
+    }
+    printf("%d",index-1);
+    return 0;
